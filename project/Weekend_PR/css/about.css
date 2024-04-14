@@ -1,0 +1,122 @@
+/* HEADER */
+
+nav ul li:first-child a{
+    color: var(--theme_white);
+}
+nav ul li:first-child a:hover{
+    color: var(--theme_orange);
+}
+nav ul :nth-child(2) a{
+    color: var(--theme_orange);
+}
+
+/* A_BANNER */
+
+.a_banner{
+    background-color: var(--theme_green);
+    padding-top: 40px;
+}
+.a_bnr_content h1{
+    color: var(--theme_white);
+    font-size: 60px;
+    font-weight: 600;
+}
+.divider_1{
+    width: 150px;
+}
+.a_bnr_img img{
+    width: 500px;
+    margin-left: auto;
+}
+
+/* A_HOTEL_ROOMS */
+
+.a_hotel_room{
+    padding: 50px 0 30px;
+}
+.a_hotel_room::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/leaf.png);
+    background-size: cover;
+    transform: rotate(260deg);
+    opacity: 0.5;
+}
+.a_hotel_img img{
+    width: 500px;
+}
+.a_hotel_room_content h2{
+    color: var(--theme_orange);
+    font-size: 35px;
+    font-weight: 700;
+}
+.a_hotel_room_content p{
+    color: var(--theme_black);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.a_hotel_room_content ul p{
+    color: var(--theme_gray);
+    font-size: 12px;
+    font-weight: 500;
+}
+.a_hotel_room_content ul li i{
+    color: var(--theme_orange);
+    margin-right: 5px;
+}
+
+/* A_RESORT & A_WHY_CHOOSE_US*/
+
+.a_resort , .a_why_choose_us{
+    padding: 40px 0;
+}
+.a_resort_content , .a_why_choose_content{
+    padding: 0 60px;
+}
+.a_resort_content img , .a_why_choose_content img{
+    width: 100px;
+    margin: 0 auto;
+}
+.a_resort_content h2 , .a_why_choose_content h2{
+    color: var(--theme_orange);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.a_resort_content p , .a_why_choose_content p{
+    color: var(--theme_gray);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* A_HOTEL_PALACE */
+
+.a_hotel_palace{
+    padding: 40px 0;
+}
+.a_hotel_item_img{
+    margin-right: 10px;
+}
+.a_hotel_palace_content h2{
+    color: var(--theme_orange);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.a_hotel_palace_content ul li a i{
+    font-size: 5px;
+    color: var(--theme_black);
+    margin-right: 10px;
+    vertical-align: super;
+}
+.a_hotel_palace_content ul li p{
+    color: var(--theme_black);
+    font-size: 14px;
+    font-weight: 400;
+}

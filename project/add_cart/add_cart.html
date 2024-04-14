@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <style>
+        .show-cart li {
+            display: flex;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <div class="">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border border-1" style="width: 20rem;">
+                    <img class="card-img-top" src="img/1.jpg" alt="M 5G" title="5G">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">M34 5G</h4>
+                        <p class="card-text">Price: $250</p>
+                        <a href="#" data-name="M34_5G" data-price="250" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/2.jpg" alt="Airpod" title="Airpod">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Bluetooth</h4>
+                        <p class="card-text">Price: $50</p>
+                        <a href="#" data-name="Bluetooth" data-price="50" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/3.jpg" alt="Apple_phn" title="Apple_phn">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Redmi</h4>
+                        <p class="card-text">Price: $300</p>
+                        <a href="#" data-name="Redmi" data-price="300" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 30px;">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/4.jpg" alt="glaxy_1" title="glaxy_1">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Airpod</h4>
+                        <p class="card-text">Price: $150</p>
+                        <a href="#" data-name="Airpod" data-price="150" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 30px;">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/5.jpg" alt="glaxy_1" title="glaxy_1">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">iPhone_13</h4>
+                        <p class="card-text">Price: $450</p>
+                        <a href="#" data-name="iPhone_13" data-price="450" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 30px;">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="img/6.jpg" alt="glaxy_1" title="glaxy_1">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Glaxy</h4>
+                        <p class="card-text">Price: $300</p>
+                        <a href="#" data-name="Glaxy" data-price="300" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>

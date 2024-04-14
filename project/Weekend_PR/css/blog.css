@@ -1,0 +1,30 @@
+/* HEADER */
+
+nav ul :nth-child(2) a{
+    color: var(--theme_white);
+}
+nav ul :nth-child(3) a{
+    color: var(--theme_orange);
+}
+
+/* BLOG_ITEMS */
+
+.blog_items{
+    padding: 80px 0;
+}
+.blog_items::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/leaf.png);
+    background-size: cover;
+    transform: rotate(260deg);
+    opacity: 0.5;
+    z-index: -1;
+}
+.blog_items .h_blog_item{
+    margin: 8px 8px 20px 8px;
+}

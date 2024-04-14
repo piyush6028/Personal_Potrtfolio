@@ -1,0 +1,45 @@
+/* HEADER */
+
+nav ul :nth-child(2) a{
+    color: var(--theme_white);
+}
+nav ul :nth-child(4) a{
+    color: var(--theme_orange);
+}
+
+/* GALLERY_ITEMS */
+
+.gallery_items{
+    padding: 40px 0;
+}
+.gallery_items::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/leaf.png);
+    background-size: cover;
+    transform: rotate(260deg);
+    opacity: 0.5;
+    z-index: -1;
+}
+.gallery_img img{
+    border-radius: 10px;
+}
+.gallery_items_1 img , .gallery_items_4 img, .gallery_items_5 img{
+    height: 240px;
+}
+.gallery_items_2 img, .gallery_items_3 img{
+    height: 497px;
+}
+.gallery_items .w_30 , .gallery_items .w_70{
+    margin: 17px 0 0 0;
+}
+.gallery_items_1, .gallery_items_3, .gallery_items_4 .w_2:first-of-type , .gallery_items_5 .w_2:first-of-type{
+    margin-right: 17px;
+}
+.gallery_items_1 .w_1:first-of-type, .gallery_items_4 .w_2, .gallery_items_3, .gallery_items_5{
+    margin-bottom: 17px;
+}

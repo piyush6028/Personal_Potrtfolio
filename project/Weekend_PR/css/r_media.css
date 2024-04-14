@@ -1,0 +1,141 @@
+/* XL */
+
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+/* LG */
+
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    .deluxe_size_item h2{
+        font-size: 30px;
+    }
+    .room_features::before, .room_features::after{
+        width: 250px;
+        height: 250px;
+    }
+    .gallery_img_item p{
+        font-size: 30px;
+    }
+    .room_timing_item ul li a i{
+        vertical-align: super;
+    }
+    .room_timing_item p{
+        font-size: 14px;
+    }
+}
+
+/* MD */
+
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .md_w_1{
+        width: 100%;
+    }
+    .md_w_2{
+        width: 50%;
+    }
+    .deluxe_rooms::after{
+        display: none;
+    }
+    .deluxe_room_content{
+        padding: 10px 0;
+    }
+    .deluxe_room_content h2, .room_feature_title h2, .room_timing_title h2, .gallery_title h2{
+        font-size: 20px;
+    }
+    .deluxe_room_size .w_4:nth-child(2) .deluxe_size_item::after{
+        display: none;
+    }
+    .deluxe_size_item{
+        margin: 10px 0;
+    }
+    .deluxe_size_item h2{
+        font-size: 20px;
+    }
+    .deluxe_size_item p{
+        font-size: 14px;
+    }
+    .room_timing_item{
+        margin: 5px 0;
+    }
+    .gallery_img_item p{
+        font-size: 20px;
+    }
+}
+
+/* SM*/
+
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .sm_w_1{
+        width: 100%;
+    }
+    .room_features::before, .room_features::after{
+        display: none;
+    }
+    .room_feature_items{
+        margin: 0;
+    }
+    .room_feature_items ul li{
+        font-weight: 500;
+    }
+    .room_timing_item{
+        padding: 0;
+    }
+    .gallery_img_item p{
+        font-size: 30px ;
+    }
+    .gallery_img_item{
+        margin: 5px;
+    }
+    .gallery_img_item img{
+        border-radius: 10px;
+    }
+    .amenitie_title p{
+        width: 500px;
+    }
+}
+
+/* XS */
+
+@media(max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+    .divider_1{
+        width: 75px;
+    }
+    .deluxe_room_content p{
+        width: auto;
+    }
+    .gallery_img_item p{
+        font-size: 20px;
+    }
+    .amenities .divider_2{
+        margin: 5px auto 5px 15px;
+    }
+    .amenities .divider_2::after{
+        right: 0;
+    }
+    .amenitie_title h2{
+        text-align: left;
+        padding: 0 15px;
+        font-size: 20px;
+    }
+    .amenitie_title p{
+        text-align: left;
+        padding:0 15px;
+        width: 100%;
+        font-size: 13px;
+    }
+}

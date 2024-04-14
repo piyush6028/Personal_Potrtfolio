@@ -1,0 +1,222 @@
+/* XL */
+
+@media(max-width:1399px){
+    .container{
+        max-width:1140px;
+    }
+}
+
+/* LG */
+
+@media(max-width:1199px){
+    .container{
+        max-width:960px;
+    }
+    .about .about-title h2, .resume .resume-title h2, .portfolio .portfolio-title h2, .contact .contact-title h2{
+        font-size: 90px;
+    }
+    .about .about-title p, .resume .resume-title p, .portfolio .portfolio-title p, .contact .contact-title p{
+        top: 35px;
+        left: 350px;
+    }
+    .about, .resume, .portfolio, .contact{
+        padding: 10px 0 30px 0;
+    }
+    .resume .resume-inner a{
+        margin-top: 10px;
+    }
+}
+
+/* MD */
+
+@media(max-width:991px){
+    .container{
+        max-width:720px;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    .banner .banner-title h1{
+        font-size: 30px;
+    }
+    .banner .banner-title h1{
+        font-size: 40px;
+    }
+    .about .about-title h2, .resume .resume-title h2, .portfolio .portfolio-title h2, .contact .contact-title h2{
+        font-size: 75px;
+    }
+    .about .about-title p, .resume .resume-title p, .portfolio .portfolio-title p, .contact .contact-title p{
+        font-size: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .resume .resume-inner .w-2:first-child, .resume .resume-inner .w-2:last-child, .portfolio-inner{
+        padding: 0;
+    }
+    .contact-item ul li{
+        font-size: 11px;
+    }
+}
+
+/* SM */
+
+@media(max-width:767px){
+    .container{
+        max-width:540px;
+    }
+    .w-sm-1{
+        width: 100%;
+    }
+    header{
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #111418;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 99;
+        padding: 15px;
+    }
+    header nav{
+        margin: 0;
+    }
+    .banner, .about, .resume, .portfolio, .contact, footer{
+        margin: 0;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: #111418;
+        z-index: 99;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 10px;
+        padding: 0;
+    }
+    header .header-img{
+        display: none;
+    }
+    .logo-img{
+        display: block;
+    }
+    .logo-img img{
+        width: 100%;
+        height: 90px;
+    }
+    header h2{
+        display: none;
+    }
+    .toggle-menu {
+        display: block;
+        margin-right: 15px;
+    }
+    header .h-icon{
+        display: none;
+    }
+    .banner .banner-title a{
+        padding: 5px 20px;
+    }
+    .banner .banner-title h1{
+        font-size: 30px;
+    }
+    .about .about-title h2, .resume .resume-title h2, .portfolio .portfolio-title h2, .contact .contact-title h2{
+        font-size: 50px;
+    }
+    .about .about-title p, .resume .resume-title p, .portfolio .portfolio-title p, .contact .contact-title p{
+        font-size: 16px;
+    }
+    .about .about-title span, .resume .resume-title span, .portfolio .portfolio-title span, .contact .contact-title span{
+        left: 50%;
+        transform: translateX(-50%)
+    }
+    .about-item, .contact .contact-inner .w-70 h2, .contact .contact-inner .contact-item form .w-1{
+        padding: 0;
+    }
+    .portfolio-item a{
+        display: block;
+    }
+    .portfolio-item .portfolio-img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact .contact-inner .contact-item form .w-2{
+        padding-left: 0;
+    }
+    .contact-item ul li i{
+        font-size: 15px;
+    }
+    .footer-item p{
+        font-size: 10px;
+    }
+    .footer-item ul li a{
+        font-size: 10px;
+    }
+}
+
+/* XS */
+
+@media(max-width:575px){
+    .container{
+        max-width:100%;
+    }
+    .w-xs-1{
+        width: 100%;
+    }
+    .banner .banner-title{
+        padding: 100px 0;
+    }
+    .banner .banner-title p:last-of-type{
+        padding: 0;
+    }
+    .about .about-item h2{
+        font-size: 20px;
+    }
+    .portfolio-item .portfolio-img{
+        margin:  0 auto;
+    }
+    
+    .contact .contact-inner .contact-item h2, .contact .contact-inner h2{
+        margin-bottom: 0;
+    }
+    .footer-item p{
+        font-size: 8px;
+    }
+    .footer-item ul li a{
+        font-size: 7px;
+    }
+}
+
+/* XXS */
+
+@media(max-width:400px){
+    .container{
+        max-width:100%;
+    }
+    .banner .banner-title h1{
+        padding: 0;
+        font-size: 20px;
+    }
+    .banner .banner-title p:last-of-type{
+        font-size: 15px;
+    }
+    .about .about-title h2, .resume .resume-title h2, .portfolio .portfolio-title h2, .contact .contact-title h2{
+        font-size: 40px;
+    }
+}

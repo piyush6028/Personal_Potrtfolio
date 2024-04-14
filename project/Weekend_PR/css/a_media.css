@@ -1,0 +1,188 @@
+/* XL */
+
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+/* LG */
+
+@media(max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+    .a_bnr_img img , .a_hotel_img img{
+        width: 100%;
+    }
+    footer .row .w_5:nth-child(2){
+        padding-left: 50px;
+    }
+    .a_hotel_room_content{
+        padding-left: 25px;
+    }
+    .a_hotel_room_content h2{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .a_hotel_room_content p{
+        font-size: 15px;
+    }
+    .a_resort_content h2, .a_why_choose_content h2{
+        font-size: 25px;
+    }
+    .a_resort_content img, .a_why_choose_content img{
+        max-width: 100%;
+    }
+    .a_hotel_palace_content h2{
+        font-size: 25px;
+    }
+    .a_hotel_palace_content ul li p{
+        font-size: 12px;
+    }
+}
+
+/* MD */
+
+@media(max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+    .md_w_1{
+        width: 100%;
+    }
+    .md_w_2{
+        width: 50%;
+    }
+    header{
+        border-bottom: none;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: var(--theme_green);
+        z-index: 99;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav li{
+        margin: 8px;
+        padding: 0 15px;
+    }
+    .hdr_btn{
+        display: none;
+    }
+    .toggle_menu {
+        display: block;
+        margin-right: 15px;
+    }
+    .a_bnr_content h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    .divider_1{
+        margin: 0 auto 30px auto;
+    }
+    .divider_1::after{
+        left: 50%;
+    }
+    .a_banner{
+        padding: 0;
+    }
+    .a_bnr_img img{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .a_hotel_room::after{
+        display: none;
+    }
+    .a_hotel_room_content{
+        padding: 15px 0;
+    }
+    .a_resort , .a_hotel_palace{
+        padding: 0;
+    }
+    .a_resort_content, .a_why_choose_content{
+        text-align: left;
+        padding: 15px 0;
+    }
+    .a_resort_content img, .a_why_choose_content img{
+        margin: 0;
+    }
+    .a_resort .row .w_2:first-child{
+        order: 2;
+    }
+    .a_hotel_palace{
+        padding: 20px 0;
+    }
+    .a_hotel_place_img{
+        display: none;
+    }
+    .a_resort, .a_why_choose_us{
+        padding: 20px 0;
+    }
+}
+
+/* SM */
+
+@media(max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    .sm_w_2{
+        width: 50%;
+    }
+    .a_bnr_img img{
+        width: 300px;
+    }
+    footer .row .w_5:nth-child(2){
+        padding: 0;
+    }
+}
+
+/* XS */
+
+@media(max-width:575px){
+    .container{
+        max-width: 100%;
+    }
+    .xs_w_1{
+        width: 100%;
+    }
+    .a_bnr_img img{
+        width: 250px;
+    }
+    .a_hotel_palace_content h2{
+        font-size: 20px;
+    }
+    .h_footer_item img{
+        width: auto;
+        margin:  0 auto;
+    }
+    .w_30 .h_footer_item ul{
+        justify-content: center;
+    }
+    footer .w_5{
+        margin: 15px 0;
+    }
+    .h_footer_item p{
+        margin: 5px 0;
+        text-align: center;
+    }
+    .h_footer_item h5{
+        text-align: center;
+    }
+}
+
+@media(max-width:300px){
+    .a_bnr_img img{
+        width: 100%;
+    }
+}

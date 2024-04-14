@@ -1,0 +1,74 @@
+/* HEADER */
+
+nav ul :nth-child(2) a{
+    color: var(--theme_white);
+}
+nav ul :nth-child(7) a{
+    color: var(--theme_orange);
+}
+
+/* CONTACT_BANNER */
+
+.contact_items{
+    padding: 60px 0 250px 0;
+}
+.contact_items::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    background-image: url(../img/leaf.png);
+    background-size: cover;
+    transform: rotate(260deg);
+    opacity: 0.5;
+    z-index: -1;
+}
+.contact_bnr_img img{
+    border-radius: 10px;
+    height: 400px;
+}
+.contact_info{
+    border-radius: 10px;
+    background: var(--theme_white);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.contact_form{
+    margin: 0 auto;
+    width: 90%;
+    position: absolute;
+    top: 70%;
+    left: 65px;
+}
+.contact_info h2{
+    color: var(--ORANGE, #B7680B);
+    font-size: 35px;
+    font-weight: 700;
+}
+.contact_info input {
+    width: 45%;
+    border-radius: 5px;
+    border: 0.5px solid rgba(127, 127, 127, 0.50);
+    background-color: #FDFDFF;
+    color: #7F7F7F;
+    font-size: 12px;
+    opacity: 0.5;
+    padding: 10px;
+    outline: none;
+    margin: 5px;
+}
+.contact_form button{
+    width: 65%;
+    border: none;
+    outline: none;
+    background-color: var(--theme_orange);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: var(--theme_white);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
