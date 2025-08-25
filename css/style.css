@@ -217,6 +217,9 @@ header nav ul li:hover a{
     display: none;
 }
 
+
+
+
 /* BANNER */
 
 .banner {
@@ -300,14 +303,9 @@ header nav ul li:hover a{
     font-weight: 600;
 }
 
-.about .about-item p:first-of-type {
-    color: #FFFFFF80;
+.about .about-item p {
+    color: #FFFFFF;
     margin: 16px 0;
-    line-height: 30px;
-}
-
-.about .about-item p:last-of-type {
-    color: #FFFFFF80;
     line-height: 30px;
 }
 
@@ -323,7 +321,7 @@ header nav ul li:hover a{
     font-weight: 600;
 }
 
-.about .about-item:last-of-type ul li:nth-of-type(2) a {
+.about .about-item:last-of-type ul li a {
     color: #20c997;
     padding: 0;
     background-color: transparent;
@@ -429,6 +427,12 @@ header nav ul li:hover a{
     transition: 0.5s all;
 }
 
+.portfolio-img a {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .portfolio-item .portfolio-img:hover img{
     opacity: 0.4;
     transform: scale(1.09);
@@ -436,6 +440,7 @@ header nav ul li:hover a{
 
 .portfolio-content h4{
     color: #75debf;
+    margin-top: 10px;
 }
 
 /* CONTACT */
@@ -470,6 +475,27 @@ header nav ul li:hover a{
     margin: 10px 0;
 }
 
+.contact-item ul.h-icon.d-flex li a {
+    display: block;
+    line-height: 1;
+}
+
+.contact-item ul.h-icon.d-flex li a svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contact-item ul.h-icon.d-flex li {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+ul.h-icon.d-flex {
+    gap: 10px;
+}
+
 .contact .contact-inner .w-70 h2 {
     padding-left: 9px;
 }
@@ -490,6 +516,9 @@ header nav ul li:hover a{
     border-radius: 6px;
     border: none;
     font-size: 16px;
+    color: #ffffff;
+}
+.contact .contact-inner  .contact-item form .w-2 input::placeholder{
     color: #4d555a;
 }
 
