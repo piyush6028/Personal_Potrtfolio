@@ -22,7 +22,7 @@
                 <a href="javascript:void(0)">
                     <div class="header-img"></div>
                     <div class="logo-img">
-                        <img src="img/logo.png" alt="logo" title="logo">
+                        <img src="img/mob_logo.png" alt="logo" title="logo">
                     </div>
                 </a>
                 <a href="javascript:void(0)" class="toggle-menu"><i class="fa-solid fa-bars"></i></a>
@@ -55,8 +55,8 @@
                 <div class="banner-title text-center">
                     <p>Welcome</p>
                     <h1>I'm <span>Piyush Chauhan</span></h1>
-                    <p>I'm Front End Designer</p>
-                    <a href="javascrit:void(0)">Hire Me</a>
+                    <p>Web Designer, Web Developer & Shopify Expert</p>
+                    <a href="#about">Hire Me</a>
                 </div>
             </div>
         </section>
@@ -205,7 +205,11 @@
                         <div class="w-3 w-md-2 w-sm-1">
                             <div class="portfolio-item">
                                 <div class="portfolio-img">
+<<<<<<< HEAD
                                     <a href="https://uplifetoday.com/" target="_blank"><img src="img/Uplife.png" alt="tailwindcss" title="tailwindcss"></a>
+=======
+                                    <a href="https://uplifetoday.com/" target="_blank"><img src="img/Uplife.png" alt="tailwindcss" title="Shopify Project-1"></a>
+>>>>>>> fabc7ad (Updated HTML/CSS, added images and new resume PDF, removed old PDF)
                                     <div class="portfolio-content">
                                         <h4>Shopify Project-1</h4>
                                     </div>
@@ -215,7 +219,11 @@
                         <div class="w-3 w-md-2 w-sm-1">
                             <div class="portfolio-item">
                                 <div class="portfolio-img">
+<<<<<<< HEAD
                                     <a href="https://bamboo-water.com/" target="_blank"><img src="img/Bamboo-water.png" alt="jQuery" title="jQuery"></a>
+=======
+                                    <a href="https://bamboo-water.com/" target="_blank"><img src="img/Bamboo-water.png" alt="jQuery" title="Shopify Project-2"></a>
+>>>>>>> fabc7ad (Updated HTML/CSS, added images and new resume PDF, removed old PDF)
                                     <div class="portfolio-content">
                                         <h4>Shopify Project-2</h4>
                                     </div>
@@ -225,7 +233,11 @@
                         <div class="w-3 w-md-2 w-sm-1">
                             <div class="portfolio-item">
                                 <div class="portfolio-img">
+<<<<<<< HEAD
                                     <a href="https://runglory.com/" target="_blank"><img src="img/Rungloory.png" alt="Bootstrap" title="Bootstrap"></a>
+=======
+                                    <a href="https://runglory.com/" target="_blank"><img src="img/Rungloory.png" alt="Bootstrap" title="Shopify Project-3"></a>
+>>>>>>> fabc7ad (Updated HTML/CSS, added images and new resume PDF, removed old PDF)
                                     <div class="portfolio-content">
                                         <h4>Shopify Project-3</h4>
                                     </div>
@@ -235,7 +247,11 @@
                         <div class="w-3 w-md-2 w-sm-1">
                             <div class="portfolio-item">
                                 <div class="portfolio-img">
+<<<<<<< HEAD
                                     <a href="https://vishvasoilmaker.com/" target="_blank"><img src="img/Vishvash.png" alt="add_cart" title="add_cart"></a>
+=======
+                                    <a href="https://vishvasoilmaker.com/" target="_blank"><img src="img/Vishvash.png" alt="add_cart" title="Shopify Project-4"></a>
+>>>>>>> fabc7ad (Updated HTML/CSS, added images and new resume PDF, removed old PDF)
                                     <div class="portfolio-content">
                                         <h4>Shopify Project-4</h4>
                                     </div>
@@ -274,27 +290,23 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-70 w-sm-1">
+                        <div class="contact-item w-70 w-sm-1">
                             <h2>SEND US A NOTE</h2>
-                            <div class="contact-item">
-                                <form>
-                                    <div class="row">
-                                        <div class="w-2">
-                                            <input type="text" placeholder="Name" name="user_name" required>
-                                        </div>
-                                        <div class="w-2">
-                                            <input type="email" placeholder="Email" name="user_email" required>
-                                        </div>
-                                        <div class="w-1">
-                                            <textarea name="massage" rows="5" placeholder="Tell us more about your needs......." required></textarea>
-                                        </div>
-                                        <div>
-                                            <button>Send Message</button>
-                                        </div>
-                                    </div>
-                                    <p></p>
-                                </form>
-                            </div>
+                            <form id="contact-form" class="row">
+                                <div class="w-2">
+                                    <input type="text" placeholder="Name" name="user_name" required>
+                                </div>
+                                <div class="w-2">
+                                    <input type="email" placeholder="Email" name="email" required>
+                                </div>
+                                <div class="w-1">
+                                    <textarea name="message" rows="5" placeholder="Tell us more about your needs......." required></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit">Send Message</button>
+                                </div>
+                                <p id="response"></p>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -306,7 +318,7 @@
         <footer>
             <div class="container">
                 <div class="footer-item d-flex justify-between align-center">
-                    <p>Copyright © 2024 <a href="javascript:void(0)">Piyush</a>. All Rights Reserved.</p>
+                    <p>Copyright © 2024 <a href="index.html">Piyush</a>. All Rights Reserved.</p>
                     <ul class="d-flex">
                         <li><a href="javascript:void(0)">Terms & Policy</a></li>
                         <li><a href="javascript:void(0)">Disclaimer</a></li>
@@ -335,6 +347,47 @@
         });
 
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    (function(){
+        emailjs.init("F-b3SiuNsFC8ZOZwy"); 
+    })();
+    
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        const params = {
+            user_name: this.user_name.value,
+            user_email: this.email.value,
+            message: this.message.value
+        };
+    
+        // 1. Mail to YOU (notification)
+        emailjs.send("service_k3v5424", "template_cjayncj", params)
+            .then(() => {
+                console.log("Mail sent to ME");
+            })
+            .catch(error => {
+                console.error("FAILED sending to ME", error);
+            });
+    
+        // 2. Mail to USER (auto-reply)
+        emailjs.send("service_k3v5424", "template_bcv984h", params)
+            .then(() => {
+                alert("Message sent successfully!");
+                document.getElementById("contact-form").reset();
+            })
+            .catch(error => {
+                alert("Failed to send auto-reply.");
+                console.error("FAILED sending to USER", error);
+            });
+    
+    });
+    </script>
+    
+
+    
 
 </body>
 
